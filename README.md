@@ -32,6 +32,6 @@ Main
 
 ## Outcome
 
-Final URL: https://shelbyrp.github.io/Portfolio-Project/
+Final URL: https://shelbyrp.github.io/SP-Portfolio/
 
 ![Final result appear as:](./assets/images/sp-portfolio-example.png)
