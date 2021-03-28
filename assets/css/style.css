@@ -1,0 +1,236 @@
+/* ________ 1 HTML (UNIVERSAL STYLES) ________ */
+/* Sets the font and font colour for the whole document */
+* {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    border: 0px;
+    padding: 0px 0px 0px 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* ________ 2 HEAD ________ */
+h1 {
+    width: 100%;
+    height: 100%;
+    font-size: 2.0rem;
+    color: black;
+    text-align: left;
+    padding: 5px 5px 5px 5px;
+}
+h2 {
+    font-size: 1.75rem;
+    color: #92cccd;
+    text-align: right;
+    padding: 5px 25px 5px 25px;
+}
+h3 {
+    font-size: 1.25rem;
+    color: black;
+    padding: 5px 5px 5px 5px;
+}
+h4 {
+    font-size: 0.75rem;
+    color: black;
+    padding: 5px 5px 5px 5px;
+}
+h5 {
+    font-size: 1.25rem;
+    color: white;
+    padding: 15px 15px 15px 15px;
+}
+.h6 {
+    font-size: 1.0rem;
+    color: white;
+    padding: 20px 15px 10px 15px;
+    text-decoration: none;
+}
+
+a {
+    font-size: 1.5rem;
+    color: #92cccd;
+    padding: 5px 5px 5px 5px;
+}
+p {
+    font-size: 1.0rem;
+    color: white;
+    padding: 15px 15px 15px 15px;
+}
+
+.project-img {
+    padding: 5px 5px 5px 5px;
+}
+
+/* Creates the hover over the project images*/
+.project-img:hover:hover{
+    opacity: 0.6
+}
+/* ________ 3 BODY ________ */
+body {
+    background-color: black;
+}
+/* ________ 3.2 MAIN ________ */
+/* main {}
+/* GRID ITEMS */
+.item1 { grid-area: header; }
+.item2 { grid-area: nav;}
+.item3 { grid-area: hero; }
+.item4 { grid-area: title_1; }
+.item5 { grid-area: main_1; }
+.item6 { grid-area: main_2; }
+.item7 { grid-area: title_2; }
+.item8 { grid-area: main_3; }
+.item9 { grid-area: main_4; }
+.item10 { grid-area: main_5; }
+.item11 { grid-area: main_6; }
+.item12 { grid-area: main_7; }
+.item13 { grid-area: title_3; }
+.item14 { grid-area: footer; }
+/* GRID CONTAINER */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    grid-template-areas:
+        'header header header nav nav nav nav nav nav'
+        'hero hero hero hero hero hero hero hero hero'
+        'title_1 main_1 main_1 main_1 main_1 main_1 main_1 main_2 main_2'
+        'title_2 main_3 main_3 main_3 main_3 main_3 main_3 main_3 main_3'
+        'title_2 main_4 main_4 main_4 main_4 main_5 main_5 main_5 main_5'
+        'title_2 main_6 main_6 main_6 main_6 main_7 main_7 main_7 main_7'
+        'title_3 footer footer footer footer footer footer footer footer';
+    grid-gap: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+/* GRID CONTAINER PROPERTIES */
+.grid-container .item3 {
+    border-bottom: solid #31343d 10px;
+}
+.grid-container .item6 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left:20px;
+}
+.grid-container .item13 {
+    background-color: #31343d;
+    border-top: #31343d solid 20px;
+    border-bottom: #31343d solid 20px;
+}
+.grid-container .item14 {
+    background-color: #31343d;
+    border-top: #31343d solid 20px;
+    border-bottom: #31343d solid 20px;
+    padding: 15px 20px 20px 20px;
+}
+/* ________ 3.1 HEADER ________ */
+/* Adds background colour, font styling and spacing*/
+header {
+    width: 100%;
+    height: 100%;
+    float: left;
+    background-color: #31343d;
+}
+/* Display is set and header font size is set */
+header h1 {
+    padding: 30px 30px 30px 30px;
+    background-color: #92cccd;
+}
+/* ________ 3.1 NAV ________ */
+nav {
+    width: 100%;
+    height: 100%;
+    float: right;
+    text-align: right;
+    padding: 30px 30px 30px 30px;
+    background-color: #31343d;
+}
+/* Changes the layout and adds a margin*/
+nav ul li {
+    display: inline;
+    margin-left: 25px;
+    background-color: #31343d;
+}
+/* Removes the bullet points and changes the font size*/
+nav a {
+    list-style-type: none;
+    text-decoration: none;
+}
+/* ________ 3.2.1 HERO IMAGE ________ */
+/* Image properties */
+.hero-image {
+    padding: 0px 0px 0px 0px;
+}
+/* ________ 2.2.2.5 ARTICLE ________ */
+/* Not used */
+/* ________ 2.2.2.6 ASIDE ________ */
+/* Not used */
+/* ________ 2.2.3 FOOTER ________ */
+/* Not used */
+/* ________ MEDIA QUERIES ________ */
+/* For mobile phones: */
+@media only screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: auto;
+        grid-template-areas:
+        'header'
+        'nav'
+        'hero'
+        'title_1'
+        'main_1'
+        'main_2'
+        'title_2'
+        'main_3'
+        'main_4'
+        'main_5'
+        'main_6'
+        'main_7'
+        'title_3'
+        'footer';
+    }
+}
+/* ________ MISCELLANEOUS IMAGE ________ */
+/* Containers holding the main image and the embedded image text */
+.container-image {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    float: left;
+}
+.circle {
+    background-color: white;
+    border: 5px solid #92cccd;
+    -webkit-border-radius: 50%;
+}
+/* Bottom Left text */
+.image-text-bottom-left {
+    position: absolute;
+    bottom: 2%;
+    left: 1%;
+    width: auto;
+    height: auto;
+    font-size: 2.0vw;
+    text-align: left;
+    color: black;
+    margin: 5px;
+    border: 0px;
+    padding: 5px 15px 5px 15px;
+    background: #92cccd;
+    background-clip: border-box;  
+}
+/* Bottom Right text */
+.image-text-bottom-right {
+    position: absolute;
+    bottom: 2%;
+    right: 0%;
+    width: auto;
+    height: auto;
+    font-size: 2.0vw;
+    text-align: right;
+    color: black;
+    border: 10px;
+    padding: 5px 15px 5px 15px;
+    background: #92cccd;
+    background-clip: border-box;  
+  }

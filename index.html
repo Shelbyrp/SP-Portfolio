@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<!--LAYOUT MASTER-grid
+     _____________________________________________________________________
+    |                                                                     |
+    | 1 <html>                                                            |
+    |  _________________________________________________________________  |
+    | |                                                                 | |
+    | | 2 <head>                                                        | |
+    | |_________________________________________________________________| |
+    | |                                                                 | |
+    | | 3 <body>                                                        | |
+    | |  _____________________________________________________________  | |
+    | | |                                                             | | |
+    | | |  4 <main>                                                   | | |
+    | | |   (GRID)                                                    | | |
+    | | |  _________________________________________________________  | | |
+    | | | | 4.1 <header>      | 4.2 <nav>                           | | | |
+    | | | |  (1.Header)       | (2. Nav)                            | | | |
+    | | | |___________________|_____________________________________| | | |
+    | | | | 4.3 <hero-image>                                        | | | |
+    | | | |  (3. Hero Image)                                        | | | |
+    | | | | _______________________________________________________ | | | |
+    | | | |                   |                  |                  | | | |
+    | | | | 4.4 <title_1>     | 4.5 <main_1>     | 4.6 <main_2>     | | | |
+    | | | |  (4.About me)     |  (5.Content)     |  (6.Image)       | | | |        
+    | | | |___________________|__________________|__________________| | | |
+    | | | |                   |                                     | | | |
+    | | | | 4.7 <title_2>     | 4.8 <main_3>                        | | | |
+    | | | |  (7.Work)         |  (8.Image)                          | | | | 
+    | | | |                   |_____________________________________| | | |
+    | | | |                   |                  |                  | | | |
+    | | | |                   | 4.9 <main_4>     | 4.10 <main_5>    | | | |
+    | | | |                   |  (9.Image)       |  (10.Image)      | | | | 
+    | | | |                   |__________________|__________________| | | |
+    | | | |                   |                  |                  | | | |
+    | | | |                   | 4.11 <main_6>    | 4.12 <main_7>    | | | |
+    | | | |                   |  (11.Image)      |  (12.Image)      | | | | 
+    | | | |___________________|__________________|__________________| | | |
+    | | | |                   |                                     | | | |
+    | | | | 4.13 <title_3>    | 4.14 <footer>                       | | | |
+    | | | |  (13.Contact Me)  |  (14.Contact Information)           | | | |
+    | | | |___________________|_____________________________________| | | |
+    | | |_____________________________________________________________| | |
+    | |_________________________________________________________________| |
+    |_____________________________________________________________________|
+
+    The GRID has 11 Elements = 11 grid items as follows;
+
+        .item1 {grid-area: header}
+        .item2 {grid-area: nav}
+        .item3 {grid-area: hero-image}
+        .item4 {grid-area: title_1}
+        .item5 {grid-area: main_1}
+        .item6 {grid-area: main_2}
+        .item7 {grid-area: title_2}
+        .item8 {grid-area: main_3}
+        .item9 {grid-area: main_4}
+        .item10 {grid-area: main_5}
+        .item11 {grid-area: main_6}
+        .item12 {grid-area: main_7}
+        .item13 {grid-area: title_3}
+        .item14 {grid-area: footer}
+-->
+
+<html lang="en-us">
+
+<head>
+    <title>Shelby Pignat Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <main>
+
+        <div class="grid-container">
+
+            <div class="item1">
+                <header>
+                    <h1>Shelby Pignat</h1>
+                </header>
+            </div>
+
+            <div class="item2">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#About-Me">About Me</a>
+                        </li>
+                        <li>
+                            <a href="#Work">Work</a>
+                        </li>
+                        <li>
+                            <a href="#Contact">Contact</a>
+                        </li>
+                        <li>
+                           <a href="https://drive.google.com/file/d/1EHZS2YNRAyZ2QJs40cQF3u7hkhRpSNR0/view?usp=sharing" target="_blank">Resume</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="item3">
+                <section class="container-image">
+                    <img src="./assets/images/SPheroBW.jpg" alt="Hero Image" class="hero-image"
+                        style="width:100%; height:100%">
+                    <div class="image-text-bottom-right">
+                        <h3>Full Stack Web Developer</h3>
+                    </div>
+                </section>
+            </div>
+
+            <div class="item4">
+                <h2 id="About-Me">About Me</h2>
+            </div>
+
+            <div class="item5">
+                <h5 id="intro">Hi I'm Shelby!</h5>
+                <p id="bio">With a background in digital marketing across a range of industries including construction,
+                    tourism and property development, I can now add that I am a Full Stack Web developer to the list.
+                    View some of my recent work below and feel free to contact me with any queries.</p>
+                <p>With a background in digital marketing across a range of industries including construction,
+                    tourism and property development, I can now add that I am a Full Stack Web developer to the list.
+                    View some of my recent work below and feel free to contact me with any queries.</p>
+                <p>With a background in digital marketing across a range of industries including construction,
+                    tourism and property development, I can now add that I am a Full Stack Web developer to the list.
+                    View some of my recent work below and feel free to contact me with any queries.</p>
+            </div>
+
+            <div class="item6">
+                <section class="container-image">
+                    <img src="./assets/images/Shelby Profile Pic.png" alt="Headshot" class="circle"
+                        style="width:90%; max-height:100%;">
+                </section>
+            </div>
+
+            <div class="item7">
+                <h2 id="Work">Work</h2>
+            </div>
+
+            <div class="item8">
+                <section class="container-image">
+                    <a href="https://shelbyrp.github.io/Horiseon-Project/" target="_blank"><img src="./assets/images/Horiseon.PNG" alt="Project 1" class="project-img" style="width:100%;height:100%;"></a>
+                    <div class="image-text-bottom-left">
+                        <h3>Project 1</h3>
+                        <h4>HTML/CSS</h4>
+                    </div>
+                </section>
+            </div>
+
+            <div class="item9">
+                <section class="container-image">
+                    <a href="#" target="_blank"><img src="./assets/images/Project Image 1.jpg" alt="Project 2" class="project-img" style="width:100%;height:100%;"></a>
+                    <div class="image-text-bottom-left">
+                        <h3>Project 2</h3>
+                        <h4>HTML/CSS</h4>
+                    </div>
+                </section>
+            </div>
+
+            <div class="item10">
+                <section class="container-image">
+                    <a href="#" target="_blank"><img src="./assets/images/Project Image 1.jpg" alt="Project 2" class="project-img" style="width:100%;height:100%;"></a>
+                    <div class="image-text-bottom-left">
+                        <h3>Project 3</h3>
+                        <h4>HTML/CSS</h4>
+                    </div>
+                </section>
+            </div>
+
+            <div class="item11">
+                <section class="container-image">
+                    <a href="#" target="_blank"><img src="./assets/images/Project Image 1.jpg" alt="Project 2" class="project-img" style="width:100%;height:100%;"></a>
+                    <div class="image-text-bottom-left">
+                        <h3>Project 4</h3>
+                        <h4>HTML/CSS</h4>
+                    </div>
+                </section>
+            </div>
+
+            <div class="item12">
+                <section class="container-image">
+                    <a href="#" target="_blank"><img src="./assets/images/Project Image 1.jpg" alt="Project 2" class="project-img" style="width:100%;height:100%;"></a>
+                    <div class="image-text-bottom-left">
+                        <h3>Project 5</h3>
+                        <h4>HTML/CSS</h4>
+                    </div>
+                </section>
+            </div>
+
+            <div class="item13">
+                <footer>
+                    <h2 id="Contact">Contact</h2>
+                </footer>
+            </div>
+
+            <div class="item14">
+                <a href="tel:0400981017" class="h6">0400 981 017</a>
+                <a href="mailto:shelby.pignat@gmail.com" class="h6">Email</a>
+                <a href="https://github.com/Shelbyrp" target="_blank" class="h6">Git Hub</a>
+                <a href="https://au.linkedin.com/in/shelby-pignat-08795293" target="_blank" class="h6">LinkedIn</a>
+                <a href="https://www.facebook.com/shelby.pignat" target="_blank" class="h6">Facebook</a>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
